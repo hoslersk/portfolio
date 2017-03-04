@@ -9,6 +9,32 @@ body {
   width: 100%;
 }
 
+.navbar {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.navbar:hover {
+  background-color: #333;
+}
+
+.navitem {
+  float: right;
+}
+
+.navitem span {
+  padding: 16px;
+  display: block;
+  color: white;
+}
+
+.navitem span:hover {
+  background-color: #111;
+}
+
 /*.jackieb, .jackieb:before, .jackieb:after {
   content: 'Jackie Brown';
   font-family: 'Shrikhand', cursive;

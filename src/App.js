@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import background from '../public/qinghill.jpg'
+// import background from '../public/qinghill.jpg'
+
+import Navbar from './components/navbar'
+
 import './App.css';
 
 class App extends Component {
 	render() {
 		return (
 			<div className="App">
+				<Navbar />
 				<div className="App-header">
 					{/* <img src={background} className="background" alt="background" /> */}
 				</div>
