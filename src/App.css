@@ -227,14 +227,14 @@ body {
 
   .construction1 {
     position: absolute;
-    top: 300px;
+    top: 310px;
     font-size: 36px;
     text-align: center;
   }
 
   .construction2 {
     position: absolute;
-    top: 301px;
+    top: 311px;
     margin-left: 1px;
     font-size: 36px;
     text-align: center;
@@ -242,14 +242,14 @@ body {
 
   .schyler1 {
     position: fixed;
-    top: 180px;
+    top: 200px;
     font-size: 24px;
   }
 
   .schyler2 {
     position: fixed;
     margin-left: 1px;
-    top: 181px;
+    top: 201px;
     font-size: 24px;
   }
 }
