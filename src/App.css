@@ -7,17 +7,28 @@
   ul.navbar li {
 		float: none;
 	}
+	.view {
+    margin-top: 100px;
+	}
 }
 
 body {
   margin: 0px;
 }
 
+.view {
+	margin-top: 48px;
+}
+
 .background {
+  z-index: 0;
+  position: absolute;
+  top: 0px;
   width: 100%;
 }
 
 .navbar {
+  z-index: 2;
   display: inline-block;
   list-style-type: none;
   margin: 0;

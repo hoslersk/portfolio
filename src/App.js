@@ -11,9 +11,9 @@ class App extends Component {
 		return (
 			<div className="App">
 				<Navbar />
-				{this.props.children}
-				{/* <Schyler /> */}
-				{/* <Construction /> */}
+				<div className="view">
+					{this.props.children}
+				</div>
 			</div>
 		);
 	}
