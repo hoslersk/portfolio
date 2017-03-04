@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Shrikhand');
 
+@media screen and (max-width: 600px){
+  ul.navbar {
+		background: rgba(51, 51, 51, .8);
+	}
+  ul.navbar li {
+		float: none;
+	}
+}
+
 body {
   background-image: url("/qinghill.jpg");
 	background-size: cover;
@@ -31,6 +40,7 @@ body {
   padding: 16px;
   display: block;
   color: white;
+	text-align: center;
 }
 
 .navitem span:hover {
@@ -142,28 +152,3 @@ body {
 .schyler1 span:nth-child(3), .schyler2 span:nth-child(3) {
   animation-delay: .5s;
 }
-
-/*.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}*/
