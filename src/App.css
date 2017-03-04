@@ -1,11 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+@import url('https://fonts.googleapis.com/css?family=Shrikhand|Chau+Philomene+One');
+
+/*$sky-gray: rgba(200, 207, 218, 1)*/
+/*$earth-cream: 225, 218, 196*/
+/*$tree-brown: 67, 57, 51*/
 
 body {
   margin: 0px;
+  background: rgba(154, 158, 171, 1);
+  font-family: 'Chau Philomene One', sans-serif;
+  color: rgba(93, 83, 94, 1);
 }
 
 .view {
-  margin-top: 48px;
+  margin-top: 54px;
 }
 
 .background {
@@ -30,7 +37,8 @@ body {
 }
 
 .navbar:hover {
-  background: rgba(51, 51, 51, .8);
+	/*background: rgba(236, 150, 164, 1);*/
+	background: rgba(223, 225, 102, 1);
 }
 
 .navitem {
@@ -38,45 +46,66 @@ body {
 }
 
 .navitem a {
+	color: rgba(93, 83, 94, 1);
   padding: 16px;
   display: block;
-  color: white;
   text-align: center;
   text-decoration: none;
 }
 
 .navitem a:hover {
-  background-color: rgba(17, 17, 17, .5);
+  /*background: rgba(223, 225, 102, 1);*/
+  background: rgba(236, 150, 164, 1);
 }
 
-/*.jackieb, .jackieb:before, .jackieb:after {
-  content: 'Jackie Brown';
-  font-family: 'Shrikhand', cursive;
-  font-size: 48px;
+.page-title {
+  margin: 32px;
 }
 
-.jackieb {
-	z-index: 1;
-	color: rgba(254, 211, 58, 0)
+.portfolio-contents {
+  display: block;
 }
 
-.jackieb:before {
-	color: rgba(236, 33, 54, 1);
-  position: relative;
-  left: 344px;
-	z-index: 0;
+.project {
+  float: left;
+  display: block;
+  width: 40%;
+  margin: 0% 0% 5% 6.66%;
 }
 
-.jackieb:after {
-	color: rgba(254, 211, 58, 1);
-	position: relative;
-	right: 350px;
-	bottom: 2px;
-	z-index: 2;
-}*/
+.project-preview {
+  width: 100%;
+  display: inline-block;
+}
+
+.project-preview i {
+  float: left;
+}
+
+.project-title {
+  margin: 0px;
+  line-height: 26px;
+  float: left;
+}
+
+.material-icons {
+  float: left;
+}
+
+.external-link {
+  text-decoration: none;
+  color: rgba(223, 225, 102, 1);
+  float: left;
+  padding: 8px;
+  margin: 8px 8px 8px 0px;
+}
+
+.external-link:hover {
+  background: rgba(236, 150, 164, 1);
+}
 
 .construction-container {
-	margin-left: 32px;
+  margin-left: 32px;
 }
 
 .construction1 {
@@ -130,34 +159,54 @@ body {
   animation-iteration-count: infinite;
 }
 
-@keyframes loading {
-  0% {
-    opacity: 0;
-  }
-  50% {opacity: 1;}
-  100% {
-    opacity: 0;
-  }
+@keyframes loading1 {
+  0%   {opacity: 0;}
+  25%  {opacity: 1;}
+  50%  {opacity: 1;}
+  75%  {opacity: 1;}
+  100% {opacity: 1;}
+}
+
+@keyframes loading2 {
+	0%   {opacity: 0;}
+  25%  {opacity: 0;}
+  50%  {opacity: 1;}
+  75%  {opacity: 1;}
+  100% {opacity: 1;}
+}
+
+@keyframes loading3 {
+	0%   {opacity: 0;}
+  25%  {opacity: 0;}
+  50%  {opacity: 0;}
+  75%  {opacity: 1;}
+  100% {opacity: 1;}
 }
 
 .schyler1 span, .schyler2 span {
-  animation-name: loading;
+  animation-name: loading1;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-fill-mode: both;
 }
 
 .schyler1 span:nth-child(2), .schyler2 span:nth-child(2) {
-  animation-delay: .25s;
+  animation-name: loading2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
 }
 
 .schyler1 span:nth-child(3), .schyler2 span:nth-child(3) {
-  animation-delay: .5s;
+  animation-name: loading3;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
 }
 
 @media screen and (max-width: 600px){
   ul.navbar {
-    background: rgba(51, 51, 51, .8);
+    background: rgba(223, 225, 102, 1);
   }
 
   ul.navbar li {
@@ -165,7 +214,7 @@ body {
   }
 
   .view {
-    margin-top: 200px;
+    margin-top: 250px;
   }
 
   .background {
