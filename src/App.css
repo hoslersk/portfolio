@@ -1,17 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Shrikhand');
 
-@media screen and (max-width: 600px){
-  ul.navbar {
-		background: rgba(51, 51, 51, .8);
-	}
-  ul.navbar li {
-		float: none;
-	}
-	.view {
-    margin-top: 100px;
-	}
-}
-
 body {
   margin: 0px;
 }
@@ -165,4 +153,54 @@ body {
 
 .schyler1 span:nth-child(3), .schyler2 span:nth-child(3) {
   animation-delay: .5s;
+}
+
+@media screen and (max-width: 600px){
+  ul.navbar {
+		background: rgba(51, 51, 51, .8);
+	}
+
+  ul.navbar li {
+		float: none;
+	}
+
+	.view {
+    margin-top: 200px;
+	}
+
+	.background {
+		margin-top: 200px;
+	}
+
+	.construction-container {
+		margin: 0px;
+	}
+
+	.construction1 {
+		position: absolute;
+		top: 300px;
+		font-size: 36px;
+		text-align: center;
+	}
+
+	.construction2 {
+		position: absolute;
+		top: 301px;
+		margin-left: 1px;
+		font-size: 36px;
+		text-align: center;
+	}
+
+	.schyler1 {
+		position: fixed;
+		top: 180px;
+		font-size: 24px;
+	}
+
+	.schyler2 {
+		position: fixed;
+		margin-left: 1px;
+		top: 181px;
+		font-size: 24px;
+	}
 }
