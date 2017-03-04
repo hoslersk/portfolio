@@ -1,4 +1,48 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+
+.background {
+  width: 100%;
+}
+
+.headline1 {
+  z-index: 2;
+  position: absolute;
+  bottom: -130px;
+  left: 40px;
+  font-size: 120px;
+	font-family: 'Shrikhand', cursive;
+	color: rgba(254, 211, 58, 1);
+}
+
+.headline2 {
+  z-index: 2;
+  position: absolute;
+  bottom: -132px;
+  left: 40px;
+  font-size: 120px;
+	font-family: 'Shrikhand', cursive;
+	color: rgba(236, 33, 54, 1);
+}
+
+.schyler1 {
+  z-index: 2;
+  position: absolute;
+  top: 60px;
+  left: 60px;
+	font-family: 'Shrikhand', cursive;
+	color: rgba(254, 211, 58, 1);
+}
+
+.schyler2 {
+  z-index: 2;
+  position: absolute;
+  top: 62px;
+  left: 60px;
+	font-family: 'Shrikhand', cursive;
+	color: rgba(236, 33, 54, 1);
+}
+
+/*.App {
   text-align: center;
 }
 
@@ -21,4 +65,4 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
-}
+}*/
