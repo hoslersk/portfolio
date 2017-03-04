@@ -8,20 +8,30 @@ class App extends Component {
 		return (
 			<div className="App">
 				<div className="App-header">
-					<img src={background} className="background" alt="background" />
-					<h1 className="schyler2">
-						Schyler Hosler is ...
-					</h1>
+					{/* <img src={background} className="background" alt="background" /> */}
+				</div>
+				<div className="schyler-container">
 					<h1 className="schyler1">
-						Schyler Hosler is ...
+						Schyler Hosler is
+						<span>.</span>
+						<span>.</span>
+						<span>.</span>
+					</h1>
+					<h1 className="schyler2">
+						Schyler Hosler is
+						<span>.</span>
+						<span>.</span>
+						<span>.</span>
 					</h1>
 				</div>
-				<h2 className="headline2">
-					UNDER CONSTRUCTION
-				</h2>
-				<h2 className="headline1">
-					UNDER CONSTRUCTION
-				</h2>
+				<div className="construction-container">
+					<h2 className="construction1">
+						UNDER CONSTRUCTION
+					</h2>
+					<h2 className="construction2">
+						UNDER CONSTRUCTION
+					</h2>
+				</div>
 			</div>
 		);
 	}
