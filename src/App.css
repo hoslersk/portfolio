@@ -83,7 +83,7 @@ body {
 }
 
 .project-title {
-  margin: 0px;
+  margin: 0px 0px 0px 8px;
   line-height: 26px;
   float: left;
 }
@@ -219,6 +219,22 @@ body {
 
   .background {
     margin-top: 200px;
+  }
+
+  .external-link {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    padding: 0px;
+  }
+
+  h1, h2, .external-link {
+    text-align: center;
+  }
+
+  .project {
+    width: 100%;
+    margin: 0px;
   }
 
   .construction-container {
