@@ -11,8 +11,9 @@ class App extends Component {
 		return (
 			<div className="App">
 				<Navbar />
-				<Schyler />
-				<Construction />
+				{this.props.children}
+				{/* <Schyler /> */}
+				{/* <Construction /> */}
 			</div>
 		);
 	}

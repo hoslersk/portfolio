@@ -10,8 +10,7 @@
 }
 
 body {
-  background-image: url("/qinghill.jpg");
-	background-size: cover;
+  margin: 0px;
 }
 
 .background {
@@ -26,6 +25,9 @@ body {
   width: 100%;
   position: fixed;
   top: 0;
+  -webkit-padding-start: 0px;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
 }
 
 .navbar:hover {
@@ -36,14 +38,15 @@ body {
   float: right;
 }
 
-.navitem span {
+.navitem a {
   padding: 16px;
   display: block;
   color: white;
-	text-align: center;
+  text-align: center;
+  text-decoration: none;
 }
 
-.navitem span:hover {
+.navitem a:hover {
   background-color: rgba(17, 17, 17, .5);
 }
 

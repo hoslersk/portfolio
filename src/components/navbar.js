@@ -1,20 +1,21 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router';
 
 export default class Navbar extends Component {
 	render() {
 		return(
 			<ul className="navbar">
 				<li className="navitem">
-					<span className="navbutton">About</span>
+					<Link to="/about">About</Link>
 				</li>
 				<li className="navitem">
-					<span className="navbutton">Contact</span>
+					<Link to="/contact">Contact</Link>
 				</li>
 				<li className="navitem">
-					<span className="navbutton">Portfolio</span>
+					<Link to="/portfolio">Portfolio</Link>
 				</li>
 				<li className="navitem">
-					<span className="navbutton">Home</span>
+					<Link to="/">Home</Link>
 				</li>
 			</ul>
 		)
