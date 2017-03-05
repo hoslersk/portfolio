@@ -12,6 +12,12 @@ export default class Portfolio extends Component {
 			<div className="portfolio-contents">
 				<h1 className="page-title">Projects Portfolio</h1>
 				<Project
+					title="YourSpace"
+					image={yourspace}
+					weblink="http://your-space-project.herokuapp.com/"
+					github="https://github.com/hoslersk/your-space-project"
+				/>
+				<Project
 					title="wanderlyst"
 					image={wanderlyst}
 					weblink="http://wanderlyst.herokuapp.com/"
@@ -25,12 +31,6 @@ export default class Portfolio extends Component {
 							title: 'Repo (Rails API)',
 						},
 					]}
-				/>
-				<Project
-					title="YourSpace"
-					image={yourspace}
-					weblink="http://your-space-project.herokuapp.com/"
-					github="https://github.com/hoslersk/your-space-project"
 				/>
 				<Project
 					title="Semi-Sentient Schoolmate"

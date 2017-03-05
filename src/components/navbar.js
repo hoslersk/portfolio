@@ -1,23 +1,30 @@
-import React, { Component } from 'react'
+import React, { Component, PropTypes } from 'react'
 import { Link } from 'react-router';
 
-export default class Navbar extends Component {
+class Navbar extends Component {
 	render() {
 		return(
 			<ul className="navbar">
-				<li className="navitem">
-					<Link to="/about">About</Link>
+				<li className={`navitem${this.props.tab === 'about' ? '-active' : ''}`}>
+					<Link to="/about" name="about" onClick={this.props.updateTab}>About</Link>
 				</li>
-				<li className="navitem">
-					<Link to="/contact">Contact</Link>
+				<li className={`navitem${this.props.tab === 'contact' ? '-active' : ''}`}>
+					<Link to="/contact" name="contact" onClick={this.props.updateTab}>Contact</Link>
 				</li>
-				<li className="navitem">
-					<Link to="/portfolio">Portfolio</Link>
+				<li className={`navitem${this.props.tab === 'portfolio' ? '-active' : ''}`}>
+					<Link to="/portfolio" name="portfolio" onClick={this.props.updateTab}>Portfolio</Link>
 				</li>
-				<li className="navitem">
-					<Link to="/">Home</Link>
+				<li className={`navitem${this.props.tab === 'home' ? '-active' : ''}`}>
+					<Link to="/" name="home" onClick={this.props.updateTab}>Home</Link>
 				</li>
 			</ul>
 		)
 	}
 }
+
+Navbar.Proptypes = {
+	updateTab: PropTypes.func,
+	tab: PropTypes.string,
+}
+
+export default Navbar

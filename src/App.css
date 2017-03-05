@@ -45,6 +45,16 @@ body {
   float: right;
 }
 
+.navitem-active a {
+  background: rgba(236, 150, 164, 1);
+	color: rgba(93, 83, 94, 1);
+  float: right;
+	padding: 16px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+}
+
 .navitem a {
 	color: rgba(93, 83, 94, 1);
   padding: 16px;
@@ -63,7 +73,7 @@ body {
 }
 
 .portfolio-contents {
-  display: block;
+  display: inline-block;
 }
 
 .project {
