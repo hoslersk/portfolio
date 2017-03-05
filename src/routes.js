@@ -6,12 +6,14 @@ import Home from './pages/home'
 import About from './pages/about'
 import Portfolio from './pages/portfolio'
 import Contact from './pages/contact'
+import Test from './pages/test'
 
 export default (
-  <Route path="/" component={App}>
-    <IndexRoute component={Home} />
-    <Route path="portfolio" component={Portfolio} />
-    <Route path="about" component={About} />
-    <Route path="contact" component={Contact} />
-  </Route>
+	<Route path="/" component={App}>
+		<IndexRoute component={Home} />
+		<Route path="portfolio" component={Portfolio} />
+		<Route path="about" component={About} />
+		<Route path="contact" component={Contact} />
+		<Route path='test' component={Test} />
+	</Route>
 );

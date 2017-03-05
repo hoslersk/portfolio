@@ -1,20 +1,17 @@
 import React, { Component } from 'react';
 
-import me1 from '../../public/me1.jpg'
-import me2 from '../../public/me2.jpg'
-import me3 from '../../public/me3.jpg'
-
-export default class About extends Component {
+export default class Test extends Component {
 	render() {
 		return (
 			<div className="page-contents">
-				<h1 className="page-title">About Schyler</h1>
-				<div className="about-content">
+				<h1 className="test-title">Test</h1>
+				<div className="test-content">
+					<div contenteditable>
+						Ransom note with Google fonts.
+					</div>
 					Interests:
 					<ul>
-						<li>Web Development</li>
 						<li>Peanut Butter</li>
-						<li>PlayStation</li>
 						<li>JRPGs</li>
 						<li>Horror</li>
 					</ul>
@@ -34,11 +31,8 @@ export default class About extends Component {
 						<li>Github</li>
 						<li>JIRA</li>
 					</ul>
+					<div className="rotated" />
 				</div>
-				<img src={me3} className="me-pic" />
-				<img src={me2} className="me-pic" />
-				<i className="devicon-github-plain" />
-				<i className="devicon-git-plain" />
 			</div>
 		)
 	}

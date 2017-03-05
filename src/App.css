@@ -22,6 +22,20 @@ body {
   width: 100%;
 }
 
+/*@font-face {
+  font-family: MyHelvetica;
+  src: local("Helvetica Neue Bold"),
+       local("HelveticaNeue-Bold"),
+       url(ransom.ttf);
+  font-weight: bold;
+}*/
+
+@font-face {
+    font-family: RansomNote;
+    src: url("../public/ransom.ttf");
+    font-weight:400;
+}
+
 .navbar {
   z-index: 2;
   display: inline-block;
@@ -37,11 +51,34 @@ body {
 }
 
 .navbar:hover {
-	/*background: rgba(236, 150, 164, 1);*/
-	background: rgba(223, 225, 102, 1);
+  /*background: rgba(236, 150, 164, 1);*/
+  background: rgba(223, 225, 102, 1);
+}
+
+.navbar-test {
+  background: rgba(145, 0, 6, 1);
+  z-index: 2;
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  -webkit-padding-start: 0px;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
 }
 
 .navitem {
+  float: right;
+}
+
+.navitem-test {
+  float: right;
+}
+
+.navitem-test-active {
   float: right;
 }
 
@@ -51,16 +88,38 @@ body {
 
 .navitem-active a {
   background: rgba(236, 150, 164, 1);
-	color: rgba(93, 83, 94, 1);
-	padding: 16px;
-	display: block;
-	text-align: center;
-	text-decoration: none;
+  color: rgba(93, 83, 94, 1);
+  padding: 16px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navitem-test-active a {
+  background: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: RansomNote, Helvetica, Arial, sans-serif;
+  font-size: 27.2px;
+  padding: 8px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
 }
 
 .navitem a {
-	color: rgba(93, 83, 94, 1);
+  color: rgba(93, 83, 94, 1);
   padding: 16px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navitem-test a {
+  /*background: rgba(236, 150, 164, 1);*/
+  color: rgba(255, 255, 255, 1);
+  font-family: RansomNote, Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  padding: 10.6px;
   display: block;
   text-align: center;
   text-decoration: none;
@@ -75,8 +134,38 @@ body {
   margin: 32px;
 }
 
+.test-title {
+  margin: 32px;
+  color: rgba(255, 255, 255, 1);
+  font-family: RansomNote, Helvetica, Arial, sans-serif;
+}
+
+.test-content {
+  margin: 64px;
+  color: rgba(255, 255, 255, 1);
+  font-family: RansomNote, Helvetica, Arial, sans-serif;
+}
+
+.rotated {
+  background: rgba(145, 0, 6, 1);
+  position: absolute;
+  right: 400px;
+  top: 0px;
+  width: 400px;
+  height: 800px;
+  transform: rotate(45deg);
+}
+
 .about-content {
   margin: 64px;
+  float: left;
+}
+
+.me-pic {
+  width: 300px;
+  margin: 64px;
+  float: left;
+  border-radius: 30px;
 }
 
 .page-contents {
@@ -245,13 +334,15 @@ body {
     padding: 0px;
   }
 
-  h1, h2, .external-link {
+  h1, h2, h3, h4, h5, h6, .external-link {
     text-align: center;
   }
 
   .project {
     width: 100%;
     margin: 0px;
+    padding-bottom: 16px;
+    border-bottom: 5px solid rgba(236, 150, 164, 1);
   }
 
   .construction-container {

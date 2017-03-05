@@ -4,9 +4,9 @@ class Project extends Component {
 
 	get repoLinks() {
 		if (typeof this.props.github !== 'string') {
-			return this.props.github.map(link => {
+			return this.props.github.map((link, i) => {
 				return(
-					<a href={link.url} className="external-link" target="_blank">
+					<a key={i} href={link.url} className="external-link" target="_blank">
 						<i className="material-icons">code</i>
 						<h3 className="project-title">{link.title}</h3>
 					</a>
@@ -26,7 +26,7 @@ class Project extends Component {
 		return(
 			<div className="project">
 				<h2>{this.props.title}</h2>
-
+				<h4>{this.props.desc}</h4>
 				<a href={this.props.weblink} target="_blank">
 					<img src={this.props.image} className="project-preview" />
 				</a>
@@ -44,6 +44,7 @@ class Project extends Component {
 
 Project.Proptypes = {
 	title: PropTypes.string,
+	desc: PropTypes.string,
 	image: PropTypes.string,
 	weblink: PropTypes.string,
 	github: PropTypes.oneOfType([

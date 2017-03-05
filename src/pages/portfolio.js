@@ -13,12 +13,14 @@ export default class Portfolio extends Component {
 				<h1 className="page-title">Schyler's Portfolio</h1>
 				<Project
 					title="YourSpace"
+					desc="A platform that connects venues with prospective renters for event hosting"
 					image={yourspace}
 					weblink="http://your-space-project.herokuapp.com/"
 					github="https://github.com/hoslersk/your-space-project"
 				/>
 				<Project
 					title="wanderlyst"
+					desc="Review itineraries from other users before planning and sharing your next trip"
 					image={wanderlyst}
 					weblink="http://wanderlyst.herokuapp.com/"
 					github={[
@@ -34,6 +36,7 @@ export default class Portfolio extends Component {
 				/>
 				<Project
 					title="Semi-Sentient Schoolmate"
+					desc="More coming soon..."
 					image={semisen}
 					weblink="https://semisen.herokuapp.com"
 					github="https://github.com/hoslersk/semi-sentient-schoolmate"
