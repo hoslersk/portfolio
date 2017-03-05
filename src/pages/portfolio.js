@@ -9,8 +9,8 @@ import Project from '../components/project'
 export default class Portfolio extends Component {
 	render() {
 		return (
-			<div className="portfolio-contents">
-				<h1 className="page-title">Projects Portfolio</h1>
+			<div className="page-contents">
+				<h1 className="page-title">Schyler's Portfolio</h1>
 				<Project
 					title="YourSpace"
 					image={yourspace}

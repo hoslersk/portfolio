@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 export default class About extends Component {
 	render() {
 		return (
-			<div className="portfolio-contents">
+			<div className="page-contents">
 				<h1 className="page-title">About Schyler</h1>
-				<p>
+				<div className="about-content">
 					Interests:
 					<ul>
 						<li>Peanut Butter</li>
@@ -28,7 +28,7 @@ export default class About extends Component {
 						<li>Github</li>
 						<li>JIRA</li>
 					</ul>
-				</p>
+				</div>
 				<i className="devicon-github-plain" />
 				<i className="devicon-git-plain" />
 			</div>
