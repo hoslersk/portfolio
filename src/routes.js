@@ -11,9 +11,9 @@ import Test from './pages/test'
 export default (
 	<Route path="/" component={App}>
 		<IndexRoute component={Home} />
-		<Route path="portfolio" component={Portfolio} />
-		<Route path="about" component={About} />
-		<Route path="contact" component={Contact} />
-		<Route path='test' component={Test} />
+		<Route path="/portfolio" component={Portfolio} />
+		<Route path="/about" component={About} />
+		<Route path="/contact" component={Contact} />
+		<Route path='/test' component={Test} />
 	</Route>
 );
