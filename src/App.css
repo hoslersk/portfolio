@@ -53,6 +53,7 @@ body {
 .navbar:hover {
   /*background: rgba(236, 150, 164, 1);*/
   background: rgba(223, 225, 102, 1);
+  background: linear-gradient(to right, rgba(0,0,0,0), rgba(223, 225, 102, 1));
 }
 
 .navbar-test {
@@ -157,15 +158,41 @@ body {
 }
 
 .about-content {
-  margin: 64px;
+  margin: 20px 64px 64px 64px;
   float: left;
+}
+
+.contact-content {
+  font-size: 36px;
+  margin: 20px 64px 64px 64px;
+  float: left;
+}
+
+.contact-content a {
+  width: 30%;
+  text-align: center;
+  margin: 0px;
 }
 
 .me-pic {
   width: 300px;
-  margin: 64px;
+  margin: 20px 64px 64px 64px;
   float: left;
   border-radius: 30px;
+}
+
+.icon-container {
+  width: 100%;
+  display: block;
+  float: left;
+}
+
+.devicon {
+  max-width: 72px;
+}
+
+.devicon svg {
+	color: yellow;
 }
 
 .page-contents {
@@ -208,6 +235,11 @@ body {
 
 .external-link:hover {
   background: rgba(236, 150, 164, 1);
+}
+
+.ppg-phone {
+  float: left;
+  margin-right: 64px;
 }
 
 .construction-container {
@@ -343,6 +375,21 @@ body {
     margin: 0px;
     padding-bottom: 16px;
     border-bottom: 5px solid rgba(236, 150, 164, 1);
+  }
+
+  .ppg-phone {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .contact-content {
+    margin: 0px;
+  }
+
+  .contact-content a {
+    width: 100%;
+    text-align: center;
+    margin-top: 16px;
   }
 
   .construction-container {
