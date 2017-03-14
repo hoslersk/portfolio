@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Shrikhand|Chau+Philomene+One');
+@import url('https://fonts.googleapis.com/css?family=Shrikhand|Chau+Philomene+One|Fjalla+One');
 
 /*$sky-gray: rgba(200, 207, 218, 1)*/
 /*$earth-cream: 225, 218, 196*/
@@ -7,7 +7,8 @@
 body {
   margin: 0px;
   background: rgba(154, 158, 171, 1);
-  font-family: 'Chau Philomene One', sans-serif;
+  /*font-family: 'Chau Philomene One', sans-serif;*/
+	font-family: 'Fjalla One', sans-serif;
   color: rgba(93, 83, 94, 1);
 }
 
