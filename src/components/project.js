@@ -28,7 +28,9 @@ class Project extends Component {
 				<h2>{this.props.title}</h2>
 				<h4>{this.props.desc}</h4>
 				<a href={this.props.weblink} target="_blank">
-					<img src={this.props.image} className="project-preview" />
+					<mask className="image-mask">
+						<img src={this.props.image} className="project-preview"/>
+					</mask>
 				</a>
 
 				<a href={this.props.weblink} className="external-link" target="_blank">

@@ -193,7 +193,7 @@ body {
 }
 
 .devicon svg {
-	color: yellow;
+  color: yellow;
 }
 
 .page-contents {
@@ -210,6 +210,40 @@ body {
 .project-preview {
   width: 100%;
   display: inline-block;
+}
+
+.image-mask {
+  position: relative;
+  display:block;
+}
+
+.image-mask {
+  background-position: -600px 0;
+}
+
+.image-mask:hover,
+.image-mask:focus{
+  background-position: 600px 0;
+  transition: all .8s;
+}
+
+.image-mask::after{
+  content:'';
+  position: absolute;
+  pointer-events: none;
+  top:0;
+	left:0;
+	right:0;
+	bottom: 0;
+  background: radial-gradient(0 0,circle farthest-side, rgba(255,255,255,0) 10%,rgba(255,255,255,.8) 98%,rgba(255,255,255,0) 100%) no-repeat;
+  background: radial-gradient(circle farthest-side at 0 0, rgba(255,255,255,0) 50%,rgba(255,255,255,.8) 98%,rgba(255,255,255,0) 100%) no-repeat;
+  background-position: inherit;
+  height: 98.6%;
+}
+
+.project-preview:hover, .project-preview:focus, .project-preview:active {
+  box-shadow: 10px 10px 20px grey;
+  transition: box-shadow 0.3s ease-in-out 0s;
 }
 
 .project-preview i {
