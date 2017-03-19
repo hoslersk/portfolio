@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import yourspace from '../../public/yourspace1.png'
 import wanderlyst from '../../public/wanderlyst1.png'
+import stockpile from '../../public/stockpile1.png'
 import semisen from '../../public/semisen1.png'
 
 import Project from '../components/project'
@@ -10,7 +11,7 @@ export default class Portfolio extends Component {
 	render() {
 		return (
 			<div className="page-contents">
-				<h1 className="page-title">Schyler's Portfolio</h1>
+				<h1 className="page-title">{"Schyler's Portfolio"}</h1>
 				<Project
 					title="YourSpace"
 					desc="A platform that connects venues with prospective renters for event hosting"
@@ -33,6 +34,13 @@ export default class Portfolio extends Component {
 							title: 'Repo (Rails API)',
 						},
 					]}
+				/>
+				<Project
+					title="Stockpile"
+					desc="More coming soon..."
+					image={stockpile}
+					weblink="https://github.com/hoslersk/stockpile"
+					github="https://github.com/hoslersk/stockpile"
 				/>
 				<Project
 					title="Semi-Sentient Schoolmate"
