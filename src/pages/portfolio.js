@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import yourspace from '../../public/yourspace1.png'
 import wanderlyst from '../../public/wanderlyst1.png'
+import polyglot from '../../public/polyglot1.png'
 import stockpile from '../../public/stockpile1.png'
 import semisen from '../../public/semisen1.png'
 
@@ -36,11 +37,11 @@ export default class Portfolio extends Component {
 					]}
 				/>
 				<Project
-					title="Stockpile"
+					title="Polyglot"
 					desc="More coming soon..."
-					image={stockpile}
-					weblink="https://github.com/hoslersk/stockpile"
-					github="https://github.com/hoslersk/stockpile"
+					image={polyglot}
+					weblink="https://github.com/hoslersk/polyglot"
+					github="https://github.com/hoslersk/polyglot"
 				/>
 				<Project
 					title="Semi-Sentient Schoolmate"
@@ -48,6 +49,13 @@ export default class Portfolio extends Component {
 					image={semisen}
 					weblink="https://semisen.herokuapp.com"
 					github="https://github.com/hoslersk/semi-sentient-schoolmate"
+				/>
+				<Project
+					title="Stockpile"
+					desc="More coming soon..."
+					image={stockpile}
+					weblink="https://github.com/hoslersk/stockpile"
+					github="https://github.com/hoslersk/stockpile"
 				/>
 			</div>
 		)

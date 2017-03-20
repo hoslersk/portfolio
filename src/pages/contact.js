@@ -1,6 +1,22 @@
 import React, { Component } from 'react';
 
+import snapchat from '../../public/snapchat.jpg'
+
 export default class Contact extends Component {
+	constructor(props) {
+		super(props)
+
+		this.state = {
+			snapchat: false,
+		}
+
+		this.toggleQR = this.toggleQR.bind(this)
+	}
+
+	toggleQR() {
+		this.setState({snapchat: !this.state.snapchat})
+	}
+
 	render() {
 		return (
 			<div className="page-contents">
@@ -30,6 +46,8 @@ export default class Contact extends Component {
 						target="_blank"
 						className="external-link"
 					>Twitter</a>
+					<span onClick={this.toggleQR}><a className="external-link">SnapChat</a></span>
+					<img src={snapchat} className={`snapchat${this.state.snapchat ? '' : 'Hidden'}`}/>
 				</div>
 			</div>
 		)
